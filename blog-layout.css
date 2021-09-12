@@ -73,10 +73,10 @@ body{
   background-color: #555;
   color: white;
 }
-.content {
-  top: 10%;
+.main .content {
+  top: 13%;
   margin-left: 200px;
-  padding: 1px 16px;
+  padding: 5% 5%;
   height: 1000px;
 }
 
