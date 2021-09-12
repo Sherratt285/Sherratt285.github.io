@@ -8,16 +8,7 @@
 	<title>
 		technical blog css
 	</title>
-<!--
-	</head>
-	        <h3>Technical CSS</h3>
-  			<a href="#contact">Contact</a>
-		    <a href="#about">About</a>
-			<a href="#contact">Projects</a>
-  		</div>
--->
 	<body>
-
 		<div class="header">
 			<div class="inner-header">
 				<div class="logo-container">
@@ -28,13 +19,9 @@
 					<a><li>About</li></a>
 					<a><li>Contact</li></a>
 					<a><li>Projects</li></a>
-
 				</ul>
 			</div>
 		</div>
-
-
-
 		<div class="main">	
 
 	        <div class = "sidebar-nav">
@@ -45,20 +32,20 @@
       			</div>
       		</div>
       		<div class="content">
+      			<br>
+      			Last updated: 12/09/2021 by sherratt pemberton
 				<br><br>
 				<h3>What are the differences between fixed, relative and absolute positioning in CSS?</h3>
+				Author: Sherratt Pemberton
+				Written: 06/12/2021
 				<br><br>
-				<p>
-					On a 1920*1080 resolution display a computer screen is made up of 2,073,600 pixels. Exponentially more for higher resolutions which are becoming a lot more common. Across so much screen real estate how do HTML elements keep from being lost amongst the clutter – and especially when things change position and size, and when other elements are moving around them – which they do on a regular basis. 
-					<br><br>
-				</p>
 
 				<p>
-					If we just threw everything onto the page, without formatting html loads line by line. this is not such a problem when we are working with a straight text document. But when we introduce pictures, videos and other elements it very quickly become a garbled mess. It makes no difference to computers, but since the whole point of a website is to communicate information to a reader if elements piled over top and around each other on a whim they would quickly get frustrated and go somewhere else.
+					How do pictures and other elements keep from coliding with eacher? If we just threw everything onto the page, without formatting html loads line by line. HTML can handlole this when working with a text document, which can be pretty well formatted within HTML alone. However, when we introduce pictures, videos and other elements it very quickly become a garbled mess. It makes no difference to computers, but since the whole point of a website is to communicate information to a reader. If elements piled over top and around each other on a whim they would quickly get frustrated and go somewhere else.
 					<br><br>
 				</p>
 				<p>
-					fortunately CSS gives us developers a tool to help solve this dilemma. The positioning property. This  property sets how an element in CSS is positioned in a document.
+					fortunately CSS gives us a tool to help solve this dilemma. The positioning property. This  property sets how an element in CSS is positioned in a document.
 					<br><br>
 					There 5 pre-sets, but we will only look at 3 ways an element can be positioned in a document here.
 					<br><br>
@@ -66,29 +53,27 @@
 				<p>
 					Relative – the element is positioned relative to its normal position.
 					this means we can move an element with this pre-set by choosing top, left, right and bottom by a specified number of pixels, and it will change its position in the document according to that pre-set.
-					the issue is when it is moved, its moved relative to its normal position so it could conflict with other elements still in their normal position and they would have to be changed as well.
 					<br><br>
 				</p>
 					<img src="images/css-positioning-schemes-790d5b-relative.png" alt="css relative position"> 
 					<br><br>
 				<p>
 					Absolute – the element is positioned absolutely to its first positioned parent.
-					This means we can move an element to a new position and it won’t affect the elements around it
+					This means we can move an element to a new position and it won’t affect the elements around it.
 					<br><br>
 				</p>
 					<img src="images/css-positioning-schemes-790d5b-absolute.png" alt="css absolute position"> 
 
 				<p>
-					Fixed – the element is positioned related to the browser window. The difference between relative and and absolute positioning is that fixed a fixed image will not move when you scroll down the page. <br>Becasue absolute positioning is psotioned in relation to its parent element not the browser it will. 
-					<br><br>
+					Fixed – the element is positioned related to the browser window. This means that the document can move around and the element stays in a fixed position on the screen. 
 				</p>
 					<img src="images/css-positioning-schemes-790d5b-fixed.png" alt="css fixed position"> 	
 
 				<p>
-					For the record the other two properties are static and sticky, but we are not going to look at them now.
+					For those curious: the final element is the stickey element. The element maintains its relitive position, untill it the browser moves past a pre-set point. When that happens the element maintains a new fixed position while the rest of the document sails past.
+					<br><br>
 				</p>
-					Written: 08/09/2021
-				<p></p>
+					<img src="images/css-positioning-stickey.png" alt="css fixed position"> 
 			</div>
 		</div>
 
