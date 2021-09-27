@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link href="../layout.css" rel="stylesheet" type="text/css">
+	<title>Javascript Basics</title>
+</head>
+<body>
+	<div class = "grid-container">
+		<div class="header">
+			<div class="logo-container" >
+				<h1>Sherratt Pemberton</h1>
+			</div>
+
+			<ul class="header-navigation">
+				<a href="../index.html"><li>Home</li></a>
+				<a href="../blog-posts.html"><li>Blog Posts</li></a>
+				<a href="../contact.html"><li>Contact</li></a>				
+			</ul>
+		</div>		
+
+		<div class="content">
+			<p>
+		    	<h1>Javascript basics.</h1>
+		    	<br/>
+		    	Sherratt Pemberton
+		    	<br/>
+		    	25/09/2021
+		    </p>
+		    <p>
+		    <br/>
+		    <br/>
+		    The goal of this post is not to teach you JavaScript all in one go but to
+		    get an idea of its place in web development and a high level over view of
+		    what’s going on within it. To learn the syntax of JavaScript FreecodeCamp’s
+		    basic JavaScript course is a very good place to start.
+		    <br>
+		    <br>
+			</p>
+			<p>
+		    <br>
+		    <h2>The relationship between HTML, CSS and Javascript</h2>
+		    <br><br>
+		    Hyper-text markup language or HTML. Is the language that forms the
+		    foundation of the internet. It describes the content of a web page, and
+		    gives us tools for organizing that information such as lists, links,
+		    dividers and classes. It is like the foundation and framework of a house it
+		    shows us the walls, floor, rooms, doors and roof.
+		    <br/>
+		    <br/>
+		    The Cascading style sheet or CSS is a system that allows us to describe the
+		    layout and look of a website. It allows us to precisely position html
+		    elements, set text and background colors, set margins and control many
+		    other property’s related to the layout and design. Continuing with our
+		    house analogy it’s the paint job, and carpets of the house. It helps to
+		    bring personality and organization to the web page.
+		    <br/>
+		    <br/>
+		    These two tools together can make a basic website, however there is a third
+		    piece of the puzzle. This piece is JavaScript. JavaScript is a text based
+		    object-oriented programming language that builds in interactivity between
+		    the user and the website, along with the website and systems that operate
+		    behind the scenes such as databases, algorithms, sales funnels and other
+		    systems. If HTML is the foundations, and structure of the house and CSS is
+		    the way it looks JavaScript is the houses plumbing, power and heating
+		    systems.
+		    <br/>
+		    <br/>
+		    <h2>Control Flow</h2>
+		    
+		    <br/>
+		    <br/>
+		    Control flow describes the sequence of steps and decisions that the script
+		    takes when it runs. This sequence can be altered using condition statements
+		    that do something if a test is passed or do something else if it fails. To
+		    do this we can use if/else and switch statements. But what if we need to
+		    repeat a set of instructions or process? such as a baker preparing
+		    baguettes. He will be following his process until he runs out of dough or
+		    runs out of space in the oven. To do this we can use loops, which repeat a
+		    process until a condition or conditions are met.
+		    <br/>
+		    <br/>
+		    using an example of booking a flight. First the passenger would select the
+		    flight date. Then they would choose which flight they wanted to boon on,
+		    probably based on flight time, departure and arrival time and price.
+		    <br/>
+		    <br/>
+		    once they had selected the flight, the next step in the sequence would be
+		    to present all available seats. After that the passenger would select their
+		    seat. The program would reserve that seat to avoid double booking. The
+		    customer would then pay for the seat and the seat would change from
+		    reserved to booked.
+		    <br/>
+		    <br/>
+
+		    <h2>The DOM</h2>
+		    <br/>
+		    <br/>
+		    The Document Object Model or DOM is an API that represents the contents of
+		    an xml or html document as a tree structure. It can be used with any
+		    programming language but is most commonly used with JavaScript. It allows
+		    us to easily create, read and update content of a document by selecting the
+		    element we want to manipulate and storing it in a variable.
+		    <br/>
+		    <br/>
+		    In other words, the DOM is an object-oriented representation of a webpage
+		    that can be manipulated by an object-oriented language like JavaScript.
+		    <br/>
+		    <br/>
+		    <h2>The difference between accessing data from arrays and objects</h2>
+		    <br/>
+		    <br/>
+		    In programming arrays are a list of data. In Javascript this data can be
+		    any type of data that JavaScript can contain in a variable. Arrays consist
+		    of a name and elements - where data is stored. The number of elements that
+		    the array contains which actively store data is the size of the array. The
+		    data is accessed by a number index, which always starts at 0.
+		    <br/>
+		    <br/>
+		    To access data from an array we use the array name and the element index we
+		    are trying to access. We can then either manipulate the elements variable
+		    as we would any other variable.
+		    <br/>
+		    Back to our flight booking example from flow control: airplaneSeat[ 13 ]
+		    from the name we can read that the arrays describe the seats in an
+		    aircraft. This element might tell us whether the 12<sup>th</sup> seat on
+		    the plane is still available or if its booked, and. If so, any in-flight
+		    extras the passenger has purchased.
+		    <br/>
+		    <br/>
+		    Similar to arrays, objects are an organized set of data which model real
+		    world things.
+		    <br/>
+		    unlike arrays which use elements to store a sequence of data objects use
+		    properties to organize data.
+			</p>
+			<p>
+		    Building on the example above using the airplaneSeat array we could also
+		    model customer data. Their name, age, contact information, and if they are
+		    part of a loyalty program. This data can then also be stored in the seat
+		    array at there booked seat once booking has been confirmed.
+		    <br/>
+		    <br/>
+		    To access an object and its property’s first we need to know the object
+		    name, then the property we are trying to update. If. Say, they weren’t part
+		    of a loyalty program but then signed up. Instead of using the index like we
+		    would an array we would need to select the property using either
+		    object.property or object[property] so. passenger.airPoints = x; or
+		    passenger[airPoints] = x;
+		    <br/>
+		    <br/>
+		    <h2>Functions</h2>
+		    <br/>
+		    <br/>
+		    A function is a set of instructions that preform a single, well-defined
+		    task. The function name should be concise and based on what it does. They
+		    can receive, manipulate and either return variables or not return
+		    variables. Functions exist to break down big, complex problems into smaller
+		    problems that are much easier to understand and solve. I am working on a
+		    separate post to go into functions in a lot more in depth – the whole idea
+		    of functions really.
+		    <br/>
+		    <br/>
+		    <br/>
+		    <br/>
+			</p>
+		</div>
+		<div class="footer">
+			<div class="inner-footer"></div>
+				<div class="watermark">
+					<h2>Developed by Sherratt Pemberton: 2021</h2>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

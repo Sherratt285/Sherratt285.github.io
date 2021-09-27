@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link href="../layout.css" rel="stylesheet" type="text/css">
+
+	<title>Plog posts</title>
+</head>
+<body>
+	<div class = "grid-container">
+		<div class="header">
+			<div class="logo-container" >
+				<h1>Sherratt Pemberton</h1>
+			</div>
+
+			<ul class="header-navigation">
+				<a href="../index.html"><li>Home</li></a>
+				<a href="../blog-posts.html"><li>Blog Posts</li></a>
+				<a href="../contact.html"><li>Contact</li></a>				
+			</ul>
+		</div>		
+
+		<div class="content">
+			<p>
+			    Problem solving.
+			    <br/>
+			    26/09/2021
+			    <br/>
+			    <br/>
+			    For this post the goal is to reflect on a problem we faced this week and
+			    techniques we used to solve it.
+			    <br/>
+			    <br/>
+			    When redesigning my blog over the past few days, I had everything set up
+			    and working on all pages within the blog. When I loaded up the first post
+			    into the new layout using grids. I found the footer had gotten involved
+			    with the core list grid, and only on this page.
+			    <br/>
+			    <br/>
+			    <img
+			        src="file:///C:/Users/Sherratt/AppData/Local/Temp/msohtmlclip1/01/clip_image002.png"
+			        width="270"
+			        height="184"
+			    />
+			    <img
+			        src="file:///C:/Users/Sherratt/AppData/Local/Temp/msohtmlclip1/01/clip_image004.png"
+			        width="302"
+			        height="129"
+			    />
+			    <br/>
+			    <br/>
+			    This had me totally stumped. Not interested in spending hours trying to
+			    figure out what was going on, I decided to call it an evening. Later on I
+			    was doing the dishes and had an epiphany. Html inheritance. If a class is a
+			    child class it inherits the properties of its parent. In order to further
+			    brake up the page for the page links I had set up the content class from
+			    the HTML below as an inner grid. (The footer class is the misbehaving one.)
+			    <br/>
+			    <br/>
+			    If the footer was part of this grid, it must be reading the grid properties
+			    from the content class instead of the main grid container as it should be.
+			    <br/>
+			    <br/>
+			    Eager to test this theory I loaded up my text editor to the problem page. I
+			    scrolled down to the footer. Hmm. There seems to be a lot of closing
+			    dividers down the bottom.
+			    <br/>
+			    <br/>
+			    <img
+			        src="file:///C:/Users/Sherratt/AppData/Local/Temp/msohtmlclip1/01/clip_image006.png"
+			        width="601"
+			        height="234"/>
+			</p>
+			<p>
+			    <br/>
+			    Sublime’s showed me which dividers were connected to which closing dividers
+			    with the orange underline. Sure enough.
+			    <br/>
+			    <br/>
+			    <img
+			        src="file:///C:/Users/Sherratt/AppData/Local/Temp/msohtmlclip1/01/clip_image008.png"
+			        width="602"
+			        height="295"/>
+			    <br/>
+			    <br/>
+			    look at the orange underline on line 45. thanks This divider on line 45 .
+			    HTML was reading the footer class as part of the content class on line 23,
+			    which we can see also underlined with the same orange line. Whereas, I
+			    wanted to be part of the main grid container class.
+			    <br/>
+			    <br/>
+			    Fortunately the solution was simple, just cut and past line 45 to between
+			    36 and 39. After the core posts class so that would be part of the content
+			    class, but before the footer class so footer would not.
+			    <br/>
+			    <br/>
+			    One save, and refresh later. Horary, it worked. I wouldn’t say in this case
+			    I used specific problem-solving strategies, it was more a case of letting
+			    myself rest as I was tired, and mulling it over in the background.
+			</p>
+		</div>
+
+		<div class="footer">
+			<div class="inner-footer"></div>
+				<div class="watermark">
+					<h2>Developed by Sherratt Pemberton: 2021</h2>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,33 @@
+.content{
+	font-family: 'Oswald', sans-serif;
+	display: grid;
+	grid-template-columns: 50% 50%;
+	grid-template-rows: 10% 10% 10% 10% 10% 10% 10% 10% 10%;
+	justify-content: center;
+}
+
+.technical-post-links button{
+	display: block;
+	border: 1px black;
+	text-align: center;
+	padding: 15px 32px;
+	cursor: pointer; 
+	width:  50%;
+}
+
+.technical-post-links button:hover {
+  background-color: #555555;
+  color: white;
+}
+
+.core-posts-links button{
+	display: block;
+}
+.core-post-links button{
+	display: block;
+	border: 1px black;
+	text-align: center;
+	padding: 15px 32px;
+	cursor: pointer; 
+	width:  50%;
+}
